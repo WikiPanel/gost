@@ -12,7 +12,7 @@ echo $'\e[35m'"  ___|              |        _ _|  _ \   /
 \____|\___/  ____/ \__|      ___|_|    \___/  
                                               "$'\e[0m'
 
-echo -e "\e[36mCreated By Maya\e[0m"
+echo -e "\e[36mCreated By Masoud Gb Special Thanks Hamid Router\e[0m"
 echo $'\e[35m'"Gost Ip6 Script v2.2.0"$'\e[0m'
 
 options=($'\e[36m1. \e[0mGost Tunnel By IP4'
@@ -118,7 +118,7 @@ systemctl enable sysctl-custom
     # Download and install Gost based on user's choice
     if [ "$gost_version_choice" -eq 1 ]; then
         echo $'\e[32mInstalling Gost version 2.11.5, please wait...\e[0m' && \
-        wget https://github.com/ginuerzh/gost/releases/download/v2.11.5/gost-linux-amd64-2.11.5.gz && \
+        wget https://wikihost.info/-files/gost-ip6/gost-linux-amd64-2.11.5.gz && \
         echo $'\e[32mGost downloaded successfully.\e[0m' && \
         gunzip gost-linux-amd64-2.11.5.gz && \
         sudo mv gost-linux-amd64-2.11.5 /usr/local/bin/gost && \
@@ -127,7 +127,7 @@ systemctl enable sysctl-custom
     else
         if [ "$gost_version_choice" -eq 2 ]; then
     echo $'\e[32mInstalling Gost version 3.0.0, please wait...\e[0m'
-    wget -O /tmp/gost.tar.gz https://github.com/go-gost/gost/releases/download/v3.0.0-nightly.20240426/gost_3.0.0-nightly.20240426_linux_amd64.tar.gz
+    wget -O /tmp/gost.tar.gz https://wikihost.info/-files/gost-ip6/gost_3.0.0-nightly.20240611_linux_amd64.tar.gz
     tar -xvzf /tmp/gost.tar.gz -C /usr/local/bin/
     chmod +x /usr/local/bin/gost
     echo $'\e[32mGost installed successfully.\e[0m'
@@ -326,7 +326,7 @@ elif [ "$choice" -eq 6 ]; then
     case "$gost_version_choice" in
         1)
             echo $'\e[32mInstalling Gost version 2.11.5, please wait...\e[0m' && \
-            wget https://github.com/ginuerzh/gost/releases/download/v2.11.5/gost-linux-amd64-2.11.5.gz && \
+            wget https://wikihost.info/-files/gost-ip6/gost-linux-amd64-2.11.5.gz && \
             echo $'\e[32mGost downloaded successfully.\e[0m' && \
             gunzip gost-linux-amd64-2.11.5.gz && \
             sudo mv gost-linux-amd64-2.11.5 /usr/local/bin/gost && \
@@ -335,7 +335,7 @@ elif [ "$choice" -eq 6 ]; then
             ;;
         2)
             echo $'\e[32mInstalling Gost version 3.0.0, please wait...\e[0m' && \
-            wget -O /tmp/gost.tar.gz https://github.com/go-gost/gost/releases/download/v3.0.0-nightly.20240201/gost_3.0.0-nightly.20240201_linux_amd64.tar.gz
+            wget -O /tmp/gost.tar.gz https://wikihost.info/-files/gost-ip6/gost_3.0.0-nightly.20240611_linux_amd64.tar.gz
     tar -xvzf /tmp/gost.tar.gz -C /usr/local/bin/
     chmod +x /usr/local/bin/gost
             echo $'\e[32mGost installed successfully.\e[0m'
@@ -456,7 +456,7 @@ fi
 # If option 9 is selected
 if [ "$choice" -eq 9 ]; then
     echo $'\e[32mInstalling BBR, please wait...\e[0m' && \
-    wget -N --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && \
+    wget -N --no-check-certificate https://wikihost.info/-files/gost-ip6/bbr.sh && \
     chmod +x bbr.sh && \
     bash bbr.sh
     bash "$0"
